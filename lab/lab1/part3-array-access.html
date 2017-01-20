@@ -69,21 +69,15 @@
       ext: 'png'
     }).addTo(map);
 
-    /* =====================
+  var R1 = [39.950502, -75.169205, "Luke's Lobster"];
+  var R2 = [39.938848, -75.158261, "Sabrina's Cafe"];
+  var R3 = [39.953218, -75.158949, "Reading Terminal Market"]
+  var RestaurantData = [R1, R2, R3];
+  for (var i = 0; i < RestaurantData.length; i++) {
+      L.marker([RestaurantData[i][0], RestaurantData[i][1]]).bindPopup(RestaurantData[i][2]).openPopup().addTo(map);
+};
 
-    Start code
 
-    ===================== */
-
-    L.marker([0, 0]).addTo(map);
-    L.marker([0, 0]).addTo(map);
-    L.marker([0, 0]).addTo(map);
-
-    /* =====================
-
-    End code
-
-    ===================== */
 
     </script>
   </body>
